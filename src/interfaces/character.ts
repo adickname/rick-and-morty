@@ -6,7 +6,7 @@ export interface Character {
     type: string
     gender: 'Female' | 'Male' | 'Genderless' | 'unknown'
     origin: {
-        name: string
+        nameOrigin: string
         url: string
     }
     location: {

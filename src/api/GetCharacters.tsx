@@ -1,4 +1,4 @@
-import { Character } from '../../interfaces/character'
+import { Character } from '../interfaces/character'
 /* const characters: Character[] = []
 const characters2: Character[] = [] */
 /* const getCharacters = async (url: string): Promise<Character> => {
@@ -8,7 +8,6 @@ const characters2: Character[] = [] */
 const get = async (url: string): Promise<Character> => {
     const result = await fetch(url)
     const data = await result.json()
-    console.log(data)
     return data
 }
 
